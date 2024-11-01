@@ -10,6 +10,7 @@ const BookDetails = () => {
 
     const { category, image,  tags, bookName, publisher, yearOfPublishing, author, review, totalPages, rating, } = book
 
+    
 
     // Add to Read LIst 
     const handleMarkAsRead = (id)=> {
