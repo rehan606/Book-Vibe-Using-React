@@ -11,7 +11,7 @@ const Book = ({ book }) => {
                 <figure className=" mb-5 bg-gray-300 rounded-xl">
                     <img
                         src={image}
-                        alt="Shoes"
+                        alt="Book"
                         className="rounded-xl py-7  h-[250px]" />
                 </figure>
                 <div className="flex gap-5">

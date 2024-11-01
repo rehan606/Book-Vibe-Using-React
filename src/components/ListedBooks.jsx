@@ -4,6 +4,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { getStoredReadList } from '../utility/AddToDB';
 import Book from './Book';
+import ReadedBook from './ReadedBook';
 
 const ListedBooks = () => {
     const [redList, setReadList] = useState([])
@@ -38,7 +39,8 @@ const ListedBooks = () => {
 
                         <div className='mb-6'>
                             {
-                                redList.map(book => <Book key={book.bookId} book={book}></Book> )
+                                // redList.map(book => <Book key={book.bookId} book={book}></Book> )
+                                redList.map(book => <ReadedBook key={book.bookId} book={book}></ReadedBook> )
                             }
                         </div>
                     </TabPanel>

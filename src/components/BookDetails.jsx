@@ -15,6 +15,7 @@ const BookDetails = () => {
     // Add to Read LIst 
     const handleMarkAsRead = (id)=> {
        addToStoredReadList(id);
+       alert(` '${bookName}' Book Added SuccessFully`)
     }
 
     // Add to Wish list 
