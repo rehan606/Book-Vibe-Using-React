@@ -16,6 +16,7 @@ const BookDetails = () => {
     const handleMarkAsRead = (id)=> {
        addToStoredReadList(id);
        alert(` '${bookName}' Book Added SuccessFully`)
+       
     }
 
     // Add to Wish list 
@@ -37,7 +38,7 @@ const BookDetails = () => {
                 <hr />
                 <p>{category}</p>
                 <hr />
-                <p><span  className="font-bold">Review :</span> {review}</p>
+                <p className="text-justify"><span  className="font-bold text-justify">Review :</span> {review}</p>
                 <div className="flex gap-5 items-center">
                     <span className="font-bold">Tag: </span>
                     {
